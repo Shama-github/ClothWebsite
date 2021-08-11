@@ -1,0 +1,12 @@
+<h3>Add New Clothing Item</h3>
+<form #clothform="ngForm" (ngSubmit)="onSubmit(clothform.value)">
+    <Strong>Image</Strong><input type="string" placeholder="Http Image link" name="cImage" ngModel required ><br>
+    <Strong>Name</Strong><input type="string" placeholder="Enter Name Of the Cloth" name="cName" ngModel required ><br>
+    <Strong>Delievery Type</Strong><input type="string" placeholder=" Enter Delievery Type" name="cDelieveryType" ngModel required ><br>
+    <Strong>Price</Strong><input type="number" placeholder="Enter Cost" name="cPrice" ngModel required ><br>
+    <Strong>Category</Strong><input type="string" placeholder="Enter Cloth for Whom F/M" name="cCategory" ngModel required ><br>
+    <Strong>Brand</Strong><input type="string" placeholder=" Enter Brand Name" name="cBrand" ngModel required ><br>
+    <Strong>Size</Strong><input type="string" placeholder="Enter Cloth Size" name="cSize" ngModel required ><br>
+    <br>
+    <input type="submit" [disabled]="clothform.invalid">
+  </form>

@@ -1,0 +1,20 @@
+<h2 class="container bg-white justify"><strong> About This Item with Id {{id}} </strong></h2>
+<div class="col-lg-6 mb-8" *ngIf="cloth">
+<div class="card">
+<img class="card-img-top " src={{cloth.cImage}} alt="clothimage">
+<div class="card-body">
+<h5 class="card-title"> {{cloth.cName}}</h5>
+<p class="card-text text-muted">Delievery: {{cloth.cDelieveryType}}</p>
+<ul class="list-group list-group-flush">
+<li class="list-group-item">Cost: {{cloth.cPrice | currency:'INR'}}</li>
+<li class="list-group-item">Category: {{cloth.cCategory}}</li>
+<li class="list-group-item">Brand: {{cloth.cBrand}}</li>
+<li class="list-group-item">Size: {{cloth.cSize}}</li>
+</ul>
+<button class="bg-success">Order Now</button>  &nbsp;
+<button class="bg-red">Add To Favourties</button>
+</div>
+</div>
+</div>
+
+

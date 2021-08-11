@@ -1,0 +1,25 @@
+  <h2 class="container-fluid bg-white justify"><strong>All Clothing Items</strong></h2>
+  <br>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 mb-4" *ngFor="let c of cloths">
+				<div class="card">
+					<img class="card-img-top" src={{c.cImage}} alt="clothimage">
+
+          <div class="card-body">
+            <h5 class="card-title">{{c.cName}}</h5>
+            <p class="card-text text-muted">Delievery: {{c.cDelieveryType}}</p>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cost: {{c.cPrice | currency:'INR'}}</li>
+            <li class="list-group-item">Category: {{c.cCategory}}</li>
+            <li class="list-group-item">Brand: {{c.cBrand}}</li>
+            <li class="list-group-item">Size: {{c.cSize}}</li>
+            </ul>
+            <a routerLink="{{c.cid}}">View Details</a> &nbsp;
+			<button class="bg-success">Order Now</button>  &nbsp;
+			<button class="bg-red">Add To Favourties</button>
+          </div>
+		</div>
+			</div>
+			</div>
+</div>

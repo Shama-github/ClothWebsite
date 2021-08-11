@@ -1,0 +1,47 @@
+  <header id="header">
+    <div class="logo" style="color: cornflowerblue;">
+     <img alt="logo" src='https://t4.ftcdn.net/jpg/00/25/05/03/360_F_25050352_Oj6MjzEEU7B38wGvYbk7N04rg1djSoKh.jpg' height="100px" weight="100px"><strong>E-Commerce BuyClothes </strong>
+     <nav class=" float-right navbar navbar-expand-lg navbar-white bg-white">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav"style="text-align: center;list-style-type:none;">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>&nbsp;&nbsp;
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="about" routerLinkActive="active">About</a>&nbsp;&nbsp;
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="items" routerLinkActive="active">Explore-Clothings</a>&nbsp;&nbsp;
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="itemupdates" routerLinkActive="active">Website-Update</a>&nbsp;&nbsp;
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="register" routerLinkActive="active">Register</a>&nbsp;&nbsp;
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="login" routerLinkActive="active">Login</a>&nbsp;&nbsp;
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="home" routerLinkActive="active">Logout</a>&nbsp;&nbsp;
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>
+  <hr>
+<div class='container-fluid' style="text-align:center">
+  <h1 style="color:crimson">Welcome to BuyClothes Online Clothing Store</h1>
+</div>
+<hr>
+<div style="margin-bottom: 10%;">
+<router-outlet></router-outlet>
+</div>
+<footer class="fixed-bottom bg-white">
+  <div class="footer-copyright text-center bg-white py-3">
+    Happy Shooping!!
+    <br>
+    © 2021 Copyright
+  </div>
+</footer>

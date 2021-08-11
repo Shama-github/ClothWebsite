@@ -1,0 +1,26 @@
+<button><a routerLink="/additem">Add New Clothing Item</a></button> <br>
+  <h2 class="container-fluid bg-white justify"><strong>All Clothing Items-Want to Do any Changes? Go ahead!</strong></h2>
+  <br>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 mb-4" *ngFor="let c of cloths">
+				<div class="card">
+					<img class="card-img-top" src={{c.cImage}} alt="clothimage">
+
+          <div class="card-body">
+            <h5 class="card-title">{{c.cName}}</h5>
+            <p class="card-text text-muted">Delievery: {{c.cDelieveryType}}</p>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cost: {{c.cPrice | currency:'INR'}}</li>
+            <li class="list-group-item">Category: {{c.cCategory}}</li>
+            <li class="list-group-item">Brand: {{c.cBrand}}</li>
+            <li class="list-group-item">Size: {{c.cSize}}</li>
+            </ul>
+            <button><a routerLink="/clothupdate/{{c.cid}}">Update</a></button>
+           &nbsp;
+            <button><a routerLink="/clothdelete/{{c.cid}}">Delete</a></button>
+          </div>
+        </div>
+</div>
+</div>
+</div>

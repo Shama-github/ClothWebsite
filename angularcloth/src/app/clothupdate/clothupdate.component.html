@@ -1,0 +1,26 @@
+
+<h2>Update This Cloth Item Details</h2>
+<form [formGroup]="clothrform" (ngSubmit)="onSubmit(clothrform.value)">
+    <Strong>Image</Strong><input type="string" placeholder="give image link" name="cImage" formControlName="cImage"  ><br>
+    <span style="color: red;" *ngIf="clothrform.controls.cImage.errors">Pleasefill this feild</span>
+    <br>
+    <Strong>Name</Strong><input type="string" placeholder="Enter Name Of the Cloth" name="cName" formControlName="cName" ><br>
+    <span style="color: red;" *ngIf="clothrform.controls.cName.errors">Pleasefill this feild</span>
+    <br>
+    <Strong>Delievery Type</Strong><input type="string" placeholder=" Enter Delievery Type" name="cDelieveryType" formControlName="cDelieveryType"  ><br>
+    <span style="color: red;" *ngIf="clothrform.controls.cDelieveryType.errors">Pleasefill this feild</span>
+    <br>
+    <Strong>Price</Strong><input type="number" placeholder="Enter Cost" name="cPrice" formControlName="cPrice"  ><br>
+    <span style="color: red;" *ngIf="clothrform.controls.cPrice.errors">Pleasefill this feild</span>
+    <br>
+    <Strong>Category</Strong><input type="string" placeholder="Enter Cloth for Whom F/M" name="cCategory" formControlName="cCategory"  ><br>
+    <span style="color: red;" *ngIf="clothrform.controls.cCategory.errors">Pleasefill this feild</span>
+    <br>
+    <Strong>Brand</Strong><input type="string" placeholder=" Enter Brand Name" name="cBrand" formControlName="cBrand"  ><br>
+    <span style="color: red;" *ngIf="clothrform.controls.cBrand.errors">Pleasefill this feild</span>
+    <br>
+    <Strong>Size</Strong><input type="string" placeholder="Enter Cloth Size" name="cSize" formControlName="cSize" ><br>
+    <span style="color: red;" *ngIf="clothrform.controls.cSize.errors">Pleasefill this feild</span>
+    <br>
+    <input type="submit" [disabled]="clothrform.invalid">
+  </form>
