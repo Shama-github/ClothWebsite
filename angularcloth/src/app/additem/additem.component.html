@@ -1,12 +1,29 @@
 <h3>Add New Clothing Item</h3>
+<div style="margin-left: 6%;">
 <form #clothform="ngForm" (ngSubmit)="onSubmit(clothform.value)">
-    <Strong>Image</Strong><input type="string" placeholder="Http Image link" name="cImage" ngModel required ><br>
-    <Strong>Name</Strong><input type="string" placeholder="Enter Name Of the Cloth" name="cName" ngModel required ><br>
-    <Strong>Delievery Type</Strong><input type="string" placeholder=" Enter Delievery Type" name="cDelieveryType" ngModel required ><br>
-    <Strong>Price</Strong><input type="number" placeholder="Enter Cost" name="cPrice" ngModel required ><br>
-    <Strong>Category</Strong><input type="string" placeholder="Enter Cloth for Whom F/M" name="cCategory" ngModel required ><br>
-    <Strong>Brand</Strong><input type="string" placeholder=" Enter Brand Name" name="cBrand" ngModel required ><br>
-    <Strong>Size</Strong><input type="string" placeholder="Enter Cloth Size" name="cSize" ngModel required ><br>
-    <br>
-    <input type="submit" [disabled]="clothform.invalid">
+  <table>
+    <tr><td><Strong>Image</Strong></td>
+      <td><input type="string" placeholder="Http Image link" name="cImage" ngModel required ></td><br>
+    </tr>
+    <tr><td><Strong>Name</Strong></td>
+      <td> <input type="string" placeholder="Enter Name Of the Cloth" name="cName" ngModel required ></td><br>
+    </tr>
+    <tr><td><Strong>Delievery Type</Strong></td>
+      <td> <input type="string" placeholder=" Enter Delievery Type" name="cDelieveryType" ngModel required ></td><br>
+    </tr>
+    <tr><td><Strong>Price</Strong></td>
+      <td>   <input type="number" placeholder="Enter Cost" name="cPrice" ngModel required ></td><br>
+    </tr>
+    <tr><td><Strong>Category</Strong></td>
+      <td> <input type="string" placeholder="Enter Cloth for Whom F/M" name="cCategory" ngModel required ></td><br>
+  </tr>
+  <tr><td><Strong>Brand</Strong></td>
+    <td> <input type="string" placeholder=" Enter Brand Name" name="cBrand" ngModel required ></td><br>
+  </tr>
+  <tr><td><Strong>Size</Strong></td>
+    <td> <input type="string" placeholder="Enter Cloth Size" name="cSize" ngModel required ></td><br>
+  </tr><br>
+    <tr><td><input type="submit" [disabled]="clothform.invalid"></td></tr>
+  </table>
   </form>
+</div>
